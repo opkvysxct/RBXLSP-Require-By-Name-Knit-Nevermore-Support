@@ -100,7 +100,7 @@ return function(status, obj, mode, noCache)
 			call = call.parent
 			if call then
 				if call.type == "call" then
-					if call.node[1] == "require" then
+					if call.node[1] == "NevermoreRequire" or call.node[1] == "KnitRequire" then
 						local libraryName = obj[1]
 						local scriptCache = vm.getCache("scriptCache")
 						local uri = guide.getUri(obj)

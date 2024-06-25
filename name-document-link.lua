@@ -9,7 +9,7 @@ return function(uri)
 	end
 	local results = {}
 	guide.eachSourceType(ast.ast, "call", function(source)
-		if source.node[1] == "require" then
+		if source.node[1] == "NevermoreRequire" or source.node[1] == "KnitRequire" then
 			if source.args and source.args[1] then
 				local defs = vm.getDefs(source.args[1])
 				for _, def in ipairs(defs) do

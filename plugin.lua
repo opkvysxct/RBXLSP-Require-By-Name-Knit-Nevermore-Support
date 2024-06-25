@@ -46,7 +46,7 @@ do
 		if results and #results > 0 then
 			return results
 		end
-		if func[1] == "require" and index == 1 then
+		if (func[1] == "NevermoreRequire" or func[1] == "KnitRequire") and index == 1 then
 			await.delay()
 			return guideInterface.require(status, args, index)
 		end

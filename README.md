@@ -1,4 +1,18 @@
-# Roblox LSP Require-by-Name
+# FORK README:
+okay so, the main change here is that it supports NevermoreEngine and Knit a little bit better, by better i mean that before it was pretty hard to usem them both, so now we do have two functions and not like before one
+## Knit
+```lua
+local KnitRequire = Knit.GetService/Knit.GetController
+local DataStore = KnitRequire("DataStore")
+```
+## NevermoreEngine
+```lua
+NevermoreRequire = require
+local Spring = NevermoreRequire("Spring")
+```
+
+# ORIGINAL README:
+## Roblox LSP Require-by-Name
 Adds context-aware require-by-name module linking to [Roblox LSP](https://github.com/NightrainsRbx/RobloxLsp).
 
 ![Code_mGZO39ONWF](https://user-images.githubusercontent.com/2924585/162556118-bebe2db1-95ec-4179-9967-d3fc8a96ecad.gif)
@@ -7,7 +21,7 @@ Last tested with Roblox LSP 1.5.11 on Windows 11
 
 <br/>
 
-## Installation:
+### Installation:
 
 1. Install [Roblox LSP Plugin Loader](https://github.com/Meta-Maxim/RobloxLsp-plugin-loader).
 
@@ -19,7 +33,7 @@ Last tested with Roblox LSP 1.5.11 on Windows 11
 
 <br/>
 
-## Operation:
+### Operation:
 
 *(Rojo project required)*
 
