@@ -7,7 +7,7 @@ local DataStore = KnitRequire("DataStore")
 ```
 ## NevermoreEngine
 ```lua
-NevermoreRequire = require(script.Parent.loader).load(script)
+local NevermoreRequire = require(script.Parent.loader).load(script)
 local Spring = NevermoreRequire("Spring")
 ```
 
